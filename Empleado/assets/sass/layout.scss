@@ -1,0 +1,175 @@
+@import './styleGuide.scss';
+.main-header{
+  width: 100%;
+  max-width: 1440px;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  .active{
+    color: $yellow;
+  }
+  .own-container{ 
+    padding: .5rem 3rem;
+    display: flex; 
+    justify-content: space-between;
+    &.sup-banner{
+      background-color: $purple-1;
+      color: $white;
+      .breadcrumb .breadcrumb-item{
+        color: $white;
+        &::before{
+          color: $white;
+        }
+        &.active{
+          color: $yellow;
+          &::before{
+            color: $yellow;
+          }
+        }
+      }
+      .action img{
+        margin-top: -1px;
+        margin-left: 2px;
+      }
+    }
+    &.brand-h{
+      max-height: 80px;
+      min-height: 80px;
+      padding: 0 24px;
+      .brand{
+        picture{
+          margin-right: 40px;
+          @media (max-width: 375px) {
+            margin-right: 14px;
+          }
+        }
+      }
+      .user-actions{
+        width: 345px;
+        @media (max-width: 767px){
+          width: 40px;
+        }
+        button{
+          width: 254px;
+        }
+        .user-actions-header{
+          list-style: none;
+          width: 88px;
+          margin-left: 5px;
+          position: relative;
+          a>.u-action{
+            position: relative;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            width: 32px;
+            background-color: $black-7;
+            border-radius: 50%;
+            &:hover{
+              background-color: $purple-2;
+              color: $white;
+            }
+            &.active::after{
+                content: '';
+                position: absolute;
+                border: 1px solid $black-7;
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                background-color: $error;
+                top: 8px;
+                right: 9px;
+                visibility: visible;
+                display: block;
+            }
+          }
+        }
+      }
+    }
+    &.sub-banner{
+      color: $white ;
+      background-color: $blue-celeste-1;
+      padding: 12px 5%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 1083px){
+      flex-direction: column;
+      }
+      p{
+        .btn-show-contact{
+          display: none;
+          transition: all;
+          @media (max-width:909px) {
+            display: inline-block;
+            margin-left: 5px;
+          }
+          .active{
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .directory{
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        span{
+          display: block;
+          img{
+            margin-right: 5px;
+          }
+        }
+        @media (max-width: 1083px) {
+          margin-top: 10px;
+          width: 50%;
+        }
+        @media (max-width: 909px) {
+          display: none;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+.container-main{
+  display: flex;
+  aside{
+    padding: 40px 16px;;
+    background-color: $white;
+    min-width: 256px;
+    nav{
+      ul{
+        list-style: none;
+        li{
+          padding: 10px 0 10px 18px;
+          &:hover{
+            background-color: $purple-3;
+            color: $white;
+          }
+          img{
+            margin-right: 12px;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+  .own-container{
+    width: 100%;
+    background-color: $black-7;
+    width: calc(100% - 256px);
+    padding-top: 40px;
+    padding-left: 28px;
+    padding-right: 24px;
+    main{
+      .card{
+        border-radius: 6px;
+        .card-header{
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

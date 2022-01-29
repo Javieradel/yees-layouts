@@ -1,0 +1,171 @@
+//_styleGuide.scss
+/* COLORS */
+$purple-1: #490C63;
+$purple-2: #652480;
+$purple-3: #9756B2;
+$purple-4: #BF7EDA;
+$purple-5: #F6E3FB;
+$purple-6: #F8F6FB;
+
+$blue-celeste-1: #5D9795;
+$blue-celeste-2: #79B3B1;
+$blue-celeste-3: #9CD6D4;
+$blue-celeste-4: #BBEBE9;
+$blue-celeste-5: #D5FBFA;
+
+$black-1: #070707;
+$black-2: #1B1B1B;
+$black-3: #343434;
+$black-4: #5C5C5C;
+$black-5: #848484;
+$black-6: #D4D4D4;
+$black-7: #F6F6F6;
+
+$yellow: #FFEC00;
+$yellow-2: #FFFF1E;
+$white: #FFF;
+$error: #CC3637; 
+/*        */
+/* FONTS */
+@font-face {
+  font-family: Gilroy;
+  src: url('/assets/fonts/Gilroy/Gilroy-ExtraBold.otf'),
+  url('/assets/fonts/Gilroy/Gilroy-Light.otf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: Mulish;
+  src: url('/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf');
+  font-weight: 300;
+}
+:root{
+  font-family: Mulish;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+}
+body{
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  a{
+    color: inherit;
+    text-decoration: none;
+    :active{
+      color: inherit;
+    }
+  }
+}
+h1,h2,h3,h4,.h1,.h2,.h3,.h4,button,.btn{
+  font-family: Gilroy;
+}
+body,.subtitle-1,.subtitle-2,.subtitle-3 {
+  font-family: Mulish;
+}
+.h1,h1{
+  font-size: 3.5rem;
+}
+.h2,h2{
+  font-size: 2.5rem;
+}
+.h3,h3{
+  font-size: 2rem;
+}
+.h4,h4{
+  font-size: 1.5rem;
+}
+.subtitle-1,
+.subtitle-2,
+.subtitle-3{
+  font-weight: 700;
+}
+.subtitle-1{
+  font-size: 1.25rem;
+}
+.subtitle-2{
+  font-size: 1rem;
+}
+.subtitle-3{
+  font-size: .875rem;
+}
+.body-1{
+  font-size: 1.25rem;
+}
+.body-2{
+  font-size: 1rem;
+}
+.body-3{
+  font-size: .875px;
+}
+.caption{
+  font-weight: 400;
+  font-size: .75rem;
+}
+button, .btn{
+  font-weight: 400;
+  font-size: .875rem;
+}
+/* BOTTONS */
+  /* PRIMARY */
+  button,.btn{
+    color: $purple-2;
+    background-color: $white;
+    border: solid $purple-2 1px;
+    border-radius: 4px;
+    padding: 12px 7px;
+    font-weight: 700;
+    &:hover{
+      background-color: $purple-6;
+    }
+    &.small{
+      padding: 7px 7px;
+    }
+    &.primary{
+      color: $purple-2;
+      background-color: $yellow;
+      border: solid $purple-2 1px;
+      border-radius: 4px;
+      padding: 12px 7px;
+      font-weight: 700;
+      &:hover{
+        background-color: $yellow-2; 
+      }
+    }
+    &.terciary{
+      background-color: $purple-2;
+      color: $white;
+      border-color: $purple-2;
+      &:hover{
+        background-color: $purple-3;
+      }
+    }
+    &.desactivated,&[disabled],&:disabled{
+      background-color: $black-6;
+      color: $black-3;
+    }
+  }
+  .dark{
+    background-color: $black-3;
+    button,.btn{
+      color: $white;
+      border-color: $white;
+      background-color: $black-3;
+    }
+  }
+  .float-btn{
+    display: flex;
+    width: 57px;
+    height: 56px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 55px;
+    right: 15px;
+    background-color: $purple-2;
+    .img{
+      width: 22px;
+      height: 22px;
+    }
+  }
+/* BOTTONS */
