@@ -12,6 +12,7 @@ $blue-celeste-2: #79B3B1;
 $blue-celeste-3: #9CD6D4;
 $blue-celeste-4: #BBEBE9;
 $blue-celeste-5: #D5FBFA;
+$blue-celeste-6: #2C6A69;
 
 $black-1: #070707;
 $black-2: #1B1B1B;
@@ -95,14 +96,14 @@ body,.subtitle-1,.subtitle-2,.subtitle-3 {
   font-size: 1rem;
 }
 .body-3{
-  font-size: .875px;
+  font-size: .875rem;
 }
 .caption{
   font-weight: 400;
   font-size: .75rem;
 }
-button, .btn{
-  font-weight: 400;
+button, .btn,.f-btn{
+  font-weight: 700;
   font-size: .875rem;
 }
 /* BOTTONS */
@@ -111,7 +112,7 @@ button, .btn{
     color: $purple-2;
     background-color: $white;
     border: solid $purple-2 1px;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 12px 7px;
     font-weight: 700;
     &:hover{
@@ -123,8 +124,7 @@ button, .btn{
     &.primary{
       color: $purple-2;
       background-color: $yellow;
-      border: solid $purple-2 1px;
-      border-radius: 4px;
+      border: none;
       padding: 12px 7px;
       font-weight: 700;
       &:hover{
@@ -159,7 +159,7 @@ button, .btn{
     border-radius: 8px;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 55px;
     right: 15px;
     background-color: $purple-2;
@@ -171,9 +171,9 @@ button, .btn{
 /* BOTTONS */
 /* RADIUS */
   .radius-6{
-    border-radius: 6px;
+    border-radius: 6px !important;
   }
   .radius-8{
-    border-radius: 8px;
+    border-radius: 8px !important;
   }
 /* RADIUS */

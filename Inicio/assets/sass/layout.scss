@@ -138,6 +138,10 @@
   flex-direction: column;
   background-color: $white;
   .own-container{
+    &>.own-container{
+      min-width: 343px;
+      max-width: 1440px;
+    }
     .banner{
       color: $white;
       .own-container{
@@ -162,6 +166,70 @@
                 left: -3px;
                 width: 8px;
                 height: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .start-wellcome{
+      .own-container{
+        nav{
+          header{
+            h3{
+              color: $purple-1;
+            }
+          }
+          .service-detail{
+            list-style: none;
+            li{
+              padding: 8px 0;
+              padding-left: 8px;
+              &::before{
+                content:''; 
+                display: inline-block; 
+                height:20px; 
+                width:20px; 
+                background-image:url('../svg/checklist.svg'); 
+                background-size:contain; 
+                background-repeat:no-repeat; 
+                position: relative;
+                top: 5px;
+                left: -8px;
+              }
+            }
+          }
+          button{
+            max-width: 276px;
+            @media (max-width: 475px){
+              max-width: none;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .contact{
+        .own-container{
+          ul{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(218px, 1fr));
+            grid-gap: 32px;
+            grid-auto-rows: minmax(38px, auto);
+            li{
+              display: flex;
+              color: $blue-celeste-6;
+              max-height: 48px;
+              background-color: $blue-celeste-5;
+              padding: 14px 10px;
+              svg{
+                display: inline-block;
+                &.ws{
+                  margin-top: -2px;
+                }
+                height: 21px;
+                width: 21px;
+                margin-left: auto;
+                fill: $blue-celeste-6;
               }
             }
           }

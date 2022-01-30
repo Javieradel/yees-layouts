@@ -82,7 +82,7 @@ body, .subtitle-1, .subtitle-2, .subtitle-3 {
 }
 
 .body-3 {
-  font-size: 0.875px;
+  font-size: 0.875rem;
 }
 
 .caption {
@@ -90,8 +90,8 @@ body, .subtitle-1, .subtitle-2, .subtitle-3 {
   font-size: 0.75rem;
 }
 
-button, .btn {
-  font-weight: 400;
+button, .btn, .f-btn {
+  font-weight: 700;
   font-size: 0.875rem;
 }
 
@@ -101,7 +101,7 @@ button, .btn {
   color: #652480;
   background-color: #FFF;
   border: solid #652480 1px;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 12px 7px;
   font-weight: 700;
 }
@@ -114,8 +114,7 @@ button.small, .btn.small {
 button.primary, .btn.primary {
   color: #652480;
   background-color: #FFEC00;
-  border: solid #652480 1px;
-  border-radius: 4px;
+  border: none;
   padding: 12px 7px;
   font-weight: 700;
 }
@@ -151,7 +150,7 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   border-radius: 8px;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 55px;
   right: 15px;
   background-color: #652480;
@@ -164,11 +163,11 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 /* BOTTONS */
 /* RADIUS */
 .radius-6 {
-  border-radius: 6px;
+  border-radius: 6px !important;
 }
 
 .radius-8 {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 
 /* RADIUS */
@@ -320,6 +319,10 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   flex-direction: column;
   background-color: #FFF;
 }
+.container-main .own-container > .own-container {
+  min-width: 343px;
+  max-width: 1440px;
+}
 .container-main .own-container .banner {
   color: #FFF;
 }
@@ -347,6 +350,60 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   left: -3px;
   width: 8px;
   height: 8px;
+}
+.container-main .own-container .start-wellcome .own-container nav header h3 {
+  color: #490C63;
+}
+.container-main .own-container .start-wellcome .own-container nav .service-detail {
+  list-style: none;
+}
+.container-main .own-container .start-wellcome .own-container nav .service-detail li {
+  padding: 8px 0;
+  padding-left: 8px;
+}
+.container-main .own-container .start-wellcome .own-container nav .service-detail li::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url("../svg/checklist.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5px;
+  left: -8px;
+}
+.container-main .own-container .start-wellcome .own-container nav button {
+  max-width: 276px;
+}
+@media (max-width: 475px) {
+  .container-main .own-container .start-wellcome .own-container nav button {
+    max-width: none;
+    width: 100%;
+  }
+}
+.container-main .own-container .start-wellcome .contact .own-container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(218px, 1fr));
+  grid-gap: 32px;
+  grid-auto-rows: minmax(38px, auto);
+}
+.container-main .own-container .start-wellcome .contact .own-container ul li {
+  display: flex;
+  color: #2C6A69;
+  max-height: 48px;
+  background-color: #D5FBFA;
+  padding: 14px 10px;
+}
+.container-main .own-container .start-wellcome .contact .own-container ul li svg {
+  display: inline-block;
+  height: 21px;
+  width: 21px;
+  margin-left: auto;
+  fill: #2C6A69;
+}
+.container-main .own-container .start-wellcome .contact .own-container ul li svg.ws {
+  margin-top: -2px;
 }
 
 /*# sourceMappingURL=layout.css.map */
