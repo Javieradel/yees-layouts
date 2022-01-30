@@ -317,6 +317,7 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 
 .container-main {
   display: flex;
+  flex-direction: column;
   background-color: #FFF;
 }
 .container-main .own-container .banner {
@@ -324,18 +325,20 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 }
 .container-main .own-container .banner .own-container {
   background-color: #490C63;
+  min-width: 343px;
+  max-width: 77.5%;
 }
-.container-main .own-container .banner .own-container span {
+.container-main .own-container .banner .own-container nav {
+  max-width: 708px;
+}
+.container-main .own-container .banner .own-container nav span {
   font-weight: 700;
 }
-.container-main .own-container .banner .own-container .banner-detail {
-  list-style: none;
-}
-.container-main .own-container .banner .own-container .banner-detail li {
+.container-main .own-container .banner .own-container nav .banner-detail li {
   position: relative;
   padding-left: 10px;
 }
-.container-main .own-container .banner .own-container .banner-detail li::before {
+.container-main .own-container .banner .own-container nav .banner-detail li::before {
   content: " ";
   border-radius: 50%;
   background-color: #FFEC00;

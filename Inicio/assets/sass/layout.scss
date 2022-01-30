@@ -135,29 +135,34 @@
 }
 .container-main{
   display: flex;
+  flex-direction: column;
   background-color: $white;
   .own-container{
     .banner{
       color: $white;
       .own-container{
         background-color: $purple-1;
-        span{
-          font-weight: 700;
-        }
-        .banner-detail{
-          list-style: none;
-          li{
-            position: relative;
-            padding-left: 10px;
-            &::before{
-              content: ' ';
-              border-radius: 50%;
-              background-color: $yellow;
-              position: absolute;
-              top: 11px;
-              left: -3px;
-              width: 8px;
-              height: 8px;
+        min-width: 343px;
+        max-width: 77.5%;
+        nav{
+          max-width: 708px;
+          span{
+            font-weight: 700;
+          }
+          .banner-detail{
+            li{
+              position: relative;
+              padding-left: 10px;
+              &::before{
+                content: ' ';
+                border-radius: 50%;
+                background-color: $yellow;
+                position: absolute;
+                top: 11px;
+                left: -3px;
+                width: 8px;
+                height: 8px;
+              }
             }
           }
         }
