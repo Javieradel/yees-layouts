@@ -106,7 +106,8 @@
             </div>
           </header>
         <!-- HEADER MAIN END -->
-        <button type="button" class="btn error justify-self-end w-100" data-bs-toggle="modal" data-bs-target="#_">Darme de baja</button>
+        <button type="button" class="btn error justify-self-end w-100" data-bs-toggle="modal" data-bs-target="#exitedModal">Cuenta</button>
+        <button type="button" class="btn error justify-self-end w-100" data-bs-toggle="modal" data-bs-target="#logoutModal">logout</button>
         <main class="container-main">
           <aside>
             <nav>
@@ -306,8 +307,8 @@
       </div>
     </div>
     <!-- MODAL -->
-    <!-- MODAL "DARSE DE BAJA" -->
-    <div class="modal fade" id="_" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- MODAL "Exited" -->
+    <div class="modal fade" id="exitedModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-5">
           <div class="modal-body">
@@ -330,6 +331,31 @@
 
             <p class="text-center body-2">
               Si necesitas ayuda, ponte en contacto con <span class="subtitle-2 emphasis">info@yees.es</span>
+            </p>
+
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <button type="button" class="btn w-100" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn primary w-100">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
+    <!-- MODAL "Exited" -->
+    <div class="modal fade" id="logoutModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-5">
+          <div class="modal-body">
+            <p class="text-center body-1 pb-4">
+              Estás a punto de cerrar sesión en esta cuenta.
+            </p>
+            <p class="text-center body-1">
+              ¿Quieres continuar?
             </p>
 
           </div>
