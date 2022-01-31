@@ -222,7 +222,7 @@
                       <div class="col-3 offset-5 justify-content-end">
                         <button type="submit" class="btn primary justify-self-end w-100">Guardar cambios</button>
                       </div>
-                    </div>
+                    </div> 
                   </form>
                 </div>
               </div>
@@ -277,6 +277,35 @@
     <button class="float-btn">
       <img src="assets/svg/info.svg" alt="">
     </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Launch static backdrop modal
+    </button>
+    <!-- MODAL -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-5">
+          <div class="modal-body">
+            <p class="text-center">
+              Al darte de baja, no podrás acceder a la plataforma y se borrará tu información personal de la base de datos de Yees!
+            </p>
+
+            <p class="text-center">
+                ¿Desea continuar?
+            </p>
+
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <button type="button" class="btn w-100" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn primary w-100">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

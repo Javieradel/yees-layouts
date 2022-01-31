@@ -351,4 +351,9 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   background-color: #FFF;
 }
 
+.modal-dialog {
+  width: 688px;
+  border: none;
+}
+
 /*# sourceMappingURL=layout.css.map */
