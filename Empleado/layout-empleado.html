@@ -264,7 +264,7 @@
                       <p>Desde esta página puedes darte de baja. Al pulsar el botón, se borrará tu información personal y tendrás que configurar un nuevo acceso a nuestra plataforma si deseas utilizar nuestros servicios.</p>
                     </div>
                     <div class="col-3 offset-3 justify-content-end">
-                      <button type="submit" class="btn error justify-self-end w-100">Darme de baja</button>
+                      <button type="button" class="btn error justify-self-end w-100" data-bs-toggle="modal" data-bs-target="#leaveModal">Darme de baja</button>
                     </div>
                     </div>
                   </form>
@@ -277,15 +277,12 @@
     <button class="float-btn">
       <img src="assets/svg/info.svg" alt="">
     </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-      Launch static backdrop modal
-    </button>
     <!-- MODAL -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="leaveModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-5">
           <div class="modal-body">
-            <p class="text-center">
+            <p class="text-center body-1">
               Al darte de baja, no podrás acceder a la plataforma y se borrará tu información personal de la base de datos de Yees!
             </p>
 
