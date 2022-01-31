@@ -135,11 +135,9 @@ button, .btn{
       color: $white;
       background-color: $error;
       border: none;
-      border-radius: 4px;
-      padding: 12px 7px;
       font-weight: 700;
       &:hover{
-        background-color: $yellow-2; 
+        background-color: $error; 
       }
     }
     &.terciary{
