@@ -351,9 +351,17 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   background-color: #FFF;
 }
 
-.modal-dialog {
-  width: 688px;
+.modal-dialog, .modal-dialog-centered {
+  min-width: 688px !important;
   border: none;
+}
+.modal-dialog svg.brand, .modal-dialog-centered svg.brand {
+  margin: 0 auto;
+}
+
+.emphasis {
+  font-weight: 700;
+  color: #490C63;
 }
 
 /*# sourceMappingURL=layout.css.map */

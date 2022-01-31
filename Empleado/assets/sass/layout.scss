@@ -173,7 +173,14 @@
     }
   }
 }
-.modal-dialog{
-  width: 688px;
+.modal-dialog, .modal-dialog-centered{
+  min-width: 688px !important;
   border: none;
+  svg.brand{
+    margin: 0 auto;
+  }
+}
+.emphasis{
+  font-weight: 700;
+  color: $purple-1
 }

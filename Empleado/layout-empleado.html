@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="root">
+
         <!-- HEADER MAIN START-->
           <header class="main-header">
             <div class="own-container sup-banner flex-column flex-md-row align-items-center justify-md-between
@@ -105,6 +106,7 @@
             </div>
           </header>
         <!-- HEADER MAIN END -->
+        <button type="button" class="btn error justify-self-end w-100" data-bs-toggle="modal" data-bs-target="#_">Darme de baja</button>
         <main class="container-main">
           <aside>
             <nav>
@@ -277,7 +279,8 @@
     <button class="float-btn">
       <img src="assets/svg/info.svg" alt="">
     </button>
-    <!-- MODAL -->
+
+    <!-- MODAL "DARSE DE BAJA" -->
     <div class="modal fade" id="leaveModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-5">
@@ -286,8 +289,47 @@
               Al darte de baja, no podrás acceder a la plataforma y se borrará tu información personal de la base de datos de Yees!
             </p>
 
-            <p class="text-center">
+            <p class="text-center body-1">
                 ¿Desea continuar?
+            </p>
+
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <button type="button" class="btn w-100" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn primary w-100">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
+    <!-- MODAL "DARSE DE BAJA" -->
+    <div class="modal fade" id="_" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-5">
+          <div class="modal-body">
+            <div class="d-block  text-center pb-4 ">
+              <picture >
+                <svg class=" brand" width="108" height="40" viewBox="0 0 108 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.9796 7.01333L16.5462 28.5912C13.5128 35.506 10.7213 37.9991 4.90959 37.9991H2.2554V31.3204H4.3866C7.35458 31.3204 8.2502 30.5397 9.30272 27.7317L0 7.01333H8.42671L13.199 19.4785L17.651 7.01333H25.9796Z" fill="#652480"/>
+                  <path d="M49.0763 18.0942C49.0728 18.784 49.0182 19.4726 48.9128 20.1542H32.2032C32.7132 22.7391 34.3475 24.0906 36.7794 24.0906C37.5838 24.1326 38.3848 23.9584 39.0996 23.5859C39.8145 23.2133 40.4173 22.656 40.8457 21.9715H48.5598C46.9778 27.1216 42.4212 30.3428 36.7925 30.3428C29.7713 30.3428 24.5676 25.1928 24.5676 18.2976C24.5676 11.4024 29.7321 6.27197 36.799 6.27197C44.049 6.27197 49.0763 11.468 49.0763 18.0811V18.0942ZM32.3405 15.8439H41.4406C41.1932 14.8116 40.5936 13.8988 39.7458 13.2637C38.8981 12.6286 37.8555 12.3113 36.799 12.3668C35.7657 12.3215 34.7499 12.6464 33.9332 13.2833C33.1165 13.9202 32.552 14.8278 32.3405 15.8439Z" fill="#652480"/>
+                  <path d="M75.2586 18.0942C75.2541 18.7837 75.2016 19.472 75.1016 20.1542H58.3921C58.8955 22.7391 60.5363 24.0906 62.9683 24.0906C63.7736 24.1331 64.5757 23.9592 65.2917 23.5866C66.0077 23.2141 66.6116 22.6565 67.041 21.9715H74.7552C73.1666 27.1216 68.6166 30.3428 62.9879 30.3428C55.9667 30.3428 50.7695 25.1928 50.7695 18.2976C50.7695 11.4024 55.9209 6.27197 62.9813 6.27197C70.2378 6.27197 75.2586 11.468 75.2586 18.0811V18.0942ZM58.5294 15.8439H67.6229C67.3766 14.811 66.7774 13.8974 65.9293 13.2621C65.0812 12.6268 64.0381 12.31 62.9813 12.3668C61.9488 12.3218 60.9339 12.6468 60.1183 13.2839C59.3027 13.9209 58.7394 14.8283 58.5294 15.8439Z" fill="#652480"/>
+                  <path d="M86.4113 30.3363C80.2793 30.3363 76.5529 27.056 76.481 22.1946H83.9402C83.9402 23.8478 85.0843 24.6023 86.5552 24.6023C87.6927 24.6023 88.7648 24.025 88.7648 22.8572C88.7648 21.5451 87.0585 21.1842 84.9012 20.8234C81.4102 20.2592 76.7818 19.2029 76.7818 13.7248C76.7818 9.198 80.6257 6.27197 86.3917 6.27197C92.1577 6.27197 95.8383 9.32922 95.9298 13.9085H88.6668C88.6668 12.4652 87.7057 11.796 86.3002 11.796C85.0581 11.796 84.2213 12.4127 84.2213 13.4624C84.2213 14.7745 85.9407 15.0435 88.0784 15.4306C91.6347 16.0866 96.3613 16.8083 96.3613 22.5357C96.3613 27.2528 92.3931 30.3428 86.4113 30.3428V30.3363Z" fill="#652480"/>
+                  <path d="M100.055 7.45285C100.055 3.33935 103.199 0 107.069 0V22.6734C107.069 26.7935 103.931 30.1329 100.055 30.1329V7.45285Z" fill="#FFEC00"/>
+                  <path d="M103.565 40C105.504 40 107.076 38.4227 107.076 36.477C107.076 34.5312 105.504 32.9539 103.565 32.9539C101.627 32.9539 100.055 34.5312 100.055 36.477C100.055 38.4227 101.627 40 103.565 40Z" fill="#FFEC00"/>
+                </svg>
+            </picture>
+            </div>    
+            <p class="text-center body-1">
+              Te has dado de baja correctamente.<br/>
+              ¡Esperamos verte en otro momento!
+            </br>
+
+            <p class="text-center body-2">
+              Si necesitas ayuda, ponte en contacto con <span class="subtitle-2 emphasis">info@yees.es</span>
             </p>
 
           </div>
