@@ -237,6 +237,7 @@
     }
     .testimonials{
       .own-container{
+        position: relative;
         nav{
           header{
             h3{
@@ -244,13 +245,30 @@
               text-align: center;
             }
           }
+          button.carousel-control-prev,
+          button.carousel-control-next{
+            background-color: $purple-1;
+            opacity: 1;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            top:calc(50% - 40px);
+          }
             .carousel{
               .carousel-indicators{
 
               }
               .carousel-inner{
                 .carousel-item{
-                  .card{
+                  .card[card]{
+                    width: 100%;
+                    max-width: 328px;
+                    @media (min-width: 600px){
+                      max-width: 584px
+                    }
+                    @media (min-width: 1200px){
+                      max-width: 888px
+                    }
                     background-color: $purple-6;
                     border: none;
                     .card-content{
@@ -264,10 +282,10 @@
                       }
                     }
                     img{
-                      @media (max-width: 768px) {
-                        width: 64px;
+                      width: 64px;
+                      @media (min-width: 425px) {
+                        width: 128px;
                       }
-                      width: 128px;
                       @media (min-width: 1024px) {
                         width: 198px;
                       }
@@ -282,14 +300,7 @@
       .card-score{
         min-width: 496px;
         flex-wrap: nowrap;
-        &::before{
-          content: 'aaaa';
-          height: 4px;
-          min-width: 136px;
-          width: 100%;
-          background-color: $black-3;
-          position: relative;
-        }
+        
       }
     } 
     }

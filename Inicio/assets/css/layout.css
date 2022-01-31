@@ -408,45 +408,61 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 .container-main .own-container .start-wellcome .contact .own-container ul li svg.ws {
   margin-top: -2px;
 }
+.container-main .own-container .testimonials .own-container {
+  position: relative;
+}
 .container-main .own-container .testimonials .own-container nav header h3 {
   color: #490C63;
   text-align: center;
 }
-.container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card {
+.container-main .own-container .testimonials .own-container nav button.carousel-control-prev,
+.container-main .own-container .testimonials .own-container nav button.carousel-control-next {
+  background-color: #490C63;
+  opacity: 1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: calc(50% - 40px);
+}
+.container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card[card] {
+  width: 100%;
+  max-width: 328px;
   background-color: #F8F6FB;
   border: none;
 }
-.container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card .card-content {
+@media (min-width: 600px) {
+  .container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card[card] {
+    max-width: 584px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card[card] {
+    max-width: 888px;
+  }
+}
+.container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card[card] .card-content {
   display: flex;
   flex-wrap: wrap;
 }
-.container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card .card-content .head {
+.container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card[card] .card-content .head {
   min-width: 63%;
 }
-.container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card img {
-  width: 128px;
+.container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card[card] img {
+  width: 64px;
 }
-@media (max-width: 768px) {
-  .container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card img {
-    width: 64px;
+@media (min-width: 425px) {
+  .container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card[card] img {
+    width: 128px;
   }
 }
 @media (min-width: 1024px) {
-  .container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card img {
+  .container-main .own-container .testimonials .own-container nav .carousel .carousel-inner .carousel-item .card[card] img {
     width: 198px;
   }
 }
 .container-main .own-container .testimonials .score .card-score {
   min-width: 496px;
   flex-wrap: nowrap;
-}
-.container-main .own-container .testimonials .score .card-score::before {
-  content: "aaaa";
-  height: 4px;
-  min-width: 136px;
-  width: 100%;
-  background-color: #343434;
-  position: relative;
 }
 
 /*# sourceMappingURL=layout.css.map */
