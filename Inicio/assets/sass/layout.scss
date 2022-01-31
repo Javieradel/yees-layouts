@@ -318,5 +318,21 @@
       position: absolute;
     }
   } 
+  .CTA-test{
+    position: relative;
+    background-color: $black-7;
+    .CTA{
+      max-width: 1116px;
+      margin: 0 auto;
+      z-index: 2;
+      flex-wrap: nowrap;
+    }
+    .btn{
+      width: auto;
+      @media(max-width: 767px){
+        width: 100%;
+      }
+    }
+  } 
 }
 

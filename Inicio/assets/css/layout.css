@@ -491,5 +491,23 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   z-index: 0;
   position: absolute;
 }
+.container-main .CTA-test {
+  position: relative;
+  background-color: #F6F6F6;
+}
+.container-main .CTA-test .CTA {
+  max-width: 1116px;
+  margin: 0 auto;
+  z-index: 2;
+  flex-wrap: nowrap;
+}
+.container-main .CTA-test .btn {
+  width: auto;
+}
+@media (max-width: 767px) {
+  .container-main .CTA-test .btn {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=layout.css.map */
