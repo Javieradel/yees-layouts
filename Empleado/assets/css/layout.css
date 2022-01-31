@@ -315,6 +315,8 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 }
 
 .container-main {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
 }
 .container-main aside {
