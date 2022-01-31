@@ -144,6 +144,7 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 }
 
 .float-btn {
+  z-index: 100;
   display: flex;
   width: 57px;
   height: 56px;
@@ -175,6 +176,17 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 }
 
 /* RADIUS */
+/* utils */
+.emphasis {
+  color: #490C63;
+}
+
+.emphasis-bg {
+  color: #FFF;
+  background-color: #490C63;
+}
+
+/* utils */
 .main-header {
   width: 100%;
   max-width: 1440px;
@@ -460,9 +472,24 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
     width: 198px;
   }
 }
-.container-main .own-container .testimonials .score .card-score {
-  min-width: 496px;
+.container-main .score {
+  position: relative;
+}
+.container-main .score .card-score {
+  color: #490C63;
+  margin: 0 auto;
+  background-color: #FFF;
+  z-index: 2;
   flex-wrap: nowrap;
+}
+.container-main .score .score-d-bar {
+  min-width: 100%;
+  min-height: 3px;
+  max-height: 3px;
+  width: 50px;
+  background-color: #F8F6FB;
+  z-index: 0;
+  position: absolute;
 }
 
 /*# sourceMappingURL=layout.css.map */

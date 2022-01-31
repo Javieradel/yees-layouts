@@ -296,14 +296,27 @@
             }
           }
       }
-    .score{
-      .card-score{
-        min-width: 496px;
-        flex-wrap: nowrap;
-        
-      }
-    } 
     }
+    
   }
+  .score{
+    position: relative;
+    .card-score{
+      color: $purple-1;
+      margin: 0 auto;
+      background-color: $white;
+      z-index: 2;
+      flex-wrap: nowrap;
+    }
+    .score-d-bar{
+      min-width: 100%;
+      min-height: 3px;
+      max-height: 3px;
+      width: 50px;
+      background-color: $purple-6;
+      z-index: 0;
+      position: absolute;
+    }
+  } 
 }
 
