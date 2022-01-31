@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* COLORS */
 /*        */
 /* FONTS */
@@ -507,6 +508,99 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 @media (max-width: 767px) {
   .container-main .CTA-test .btn {
     width: 100%;
+  }
+}
+.container-main > main {
+  position: relative;
+  width: 100%;
+  max-width: 1116px;
+}
+.container-main > main figure {
+  z-index: 1;
+  margin-top: 15%;
+}
+.container-main > main figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (min-width: 576px) {
+  .container-main > main figure img {
+    width: 524px;
+    height: 432px;
+  }
+}
+@media (min-width: 768px) {
+  .container-main > main figure img {
+    width: 768px;
+    height: 432px;
+  }
+}
+.container-main > main > main {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -30px;
+  /*BLUR*/
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 40px;
+}
+@media (min-width: 575px) {
+  .container-main > main > main {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 0;
+    height: 368px;
+    width: auto;
+    max-width: 80%;
+    position: absolute;
+    top: calc(90% - 368px);
+  }
+}
+@media (min-width: 768px) {
+  .container-main > main > main {
+    min-width: 584px;
+  }
+}
+@media (min-width: 800px) {
+  .container-main > main > main {
+    height: 352px;
+    top: calc(90% - 352px);
+    width: 774px;
+  }
+}
+.container-main > main > main .badges-list ul {
+  list-style: none;
+}
+.container-main > main > main .badges-list ul .badges {
+  color: #FFF;
+  background-color: #490C63;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin-right: 16px;
+  margin-bottom: 15px;
+}
+@media (max-width: 440px) {
+  .container-main > main > main .badges-list ul .badges {
+    font-weight: 800;
+  }
+}
+.container-main > main > main .badges-list ul .badges::before {
+  content: "⬤";
+  font-size: 0.65em;
+  position: relative;
+  top: -2px;
+}
+.container-main > main > main .badges-list ul .badges:hover {
+  color: #FFEC00;
+}
+@media (min-width: 575px) {
+  .container-main > main > main .actions {
+    max-width: 60%;
   }
 }
 
