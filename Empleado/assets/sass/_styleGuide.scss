@@ -29,13 +29,13 @@ $error: #CC3637;
 /* FONTS */
 @font-face {
   font-family: Gilroy;
-  src: url('/assets/fonts/Gilroy/Gilroy-ExtraBold.otf'),
-  url('/assets/fonts/Gilroy/Gilroy-Light.otf');
+  src: url('../fonts/Gilroy/Gilroy-ExtraBold.otf'),
+  url('../fonts/Gilroy/Gilroy-Light.otf');
   font-weight: 800;
 }
 @font-face {
   font-family: Mulish;
-  src: url('/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf');
+  src: url('../fonts/Mulish/Mulish-VariableFont_wght.ttf');
   font-weight: 300;
 }
 :root{
@@ -123,7 +123,18 @@ button, .btn{
     &.primary{
       color: $purple-2;
       background-color: $yellow;
-      border: solid $purple-2 1px;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 7px;
+      font-weight: 700;
+      &:hover{
+        background-color: $yellow-2; 
+      }
+    }
+    &.error{
+      color: $white;
+      background-color: $error;
+      border: none;
       border-radius: 4px;
       padding: 12px 7px;
       font-weight: 700;
@@ -159,7 +170,7 @@ button, .btn{
     border-radius: 8px;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 55px;
     right: 15px;
     background-color: $purple-2;

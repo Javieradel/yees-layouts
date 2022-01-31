@@ -21,11 +21,12 @@ $black-4: #5C5C5C;
 $black-5: #848484;
 $black-6: #D4D4D4;
 $black-7: #F6F6F6;
+$black-8: #EEE8F6;
 
 $yellow: #FFEC00;
 $yellow-2: #FFFF1E;
 $white: #FFF;
-$error: #CC3637; 
+$error: #CC3637;
 /*        */
 /* FONTS */
 @font-face {
@@ -78,7 +79,7 @@ body,.subtitle-1,.subtitle-2,.subtitle-3 {
 .subtitle-1,
 .subtitle-2,
 .subtitle-3{
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .subtitle-1{
   font-size: 1.25rem;
@@ -175,5 +176,8 @@ button, .btn,.f-btn{
   }
   .radius-8{
     border-radius: 8px !important;
+  }
+  .radius-24{
+    border-radius: 24px !important;
   }
 /* RADIUS */

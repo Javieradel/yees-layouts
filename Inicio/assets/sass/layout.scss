@@ -138,16 +138,15 @@
   flex-direction: column;
   background-color: $white;
   .own-container{
-    &>.own-container{
+    .own-container{
       min-width: 343px;
-      max-width: 1440px;
+      max-width: 1116px;
     }
     .banner{
       color: $white;
       .own-container{
         background-color: $purple-1;
         min-width: 343px;
-        max-width: 77.5%;
         nav{
           max-width: 708px;
           span{
@@ -236,5 +235,64 @@
         }
       }
     }
+    .testimonials{
+      .own-container{
+        nav{
+          header{
+            h3{
+              color: $purple-1;
+              text-align: center;
+            }
+          }
+            .carousel{
+              .carousel-indicators{
+
+              }
+              .carousel-inner{
+                .carousel-item{
+                  .card{
+                    background-color: $purple-6;
+                    border: none;
+                    .card-content{
+                      display: flex;
+                      flex-wrap: wrap;
+                      .avatar{
+
+                      }
+                      .head{
+                        min-width: 63%;
+                      }
+                    }
+                    img{
+                      @media (max-width: 768px) {
+                        width: 64px;
+                      }
+                      width: 128px;
+                      @media (min-width: 1024px) {
+                        width: 198px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+      }
+    .score{
+      .card-score{
+        min-width: 496px;
+        flex-wrap: nowrap;
+        &::before{
+          content: 'aaaa';
+          height: 4px;
+          min-width: 136px;
+          width: 100%;
+          background-color: $black-3;
+          position: relative;
+        }
+      }
+    } 
+    }
   }
 }
+
