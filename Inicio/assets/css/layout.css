@@ -689,20 +689,19 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   width: 12px;
   margin-top: -1.5px;
 }
-.container-main > footer main .own-container {
+.container-main > footer > main .own-container {
   border-bottom: 1px solid #848484;
 }
 @media (max-width: 768px) {
-  .container-main > footer main .own-container nav nav {
+  .container-main > footer > main .own-container nav nav {
     width: 50%;
   }
 }
 @media (min-width: 578px) {
-  .container-main > footer main .own-container p {
+  .container-main > footer > main .own-container p {
     max-width: 448px;
   }
 }
-
 .blur {
   /*BLUR*/
   background-color: rgba(255, 255, 255, 0.8);
