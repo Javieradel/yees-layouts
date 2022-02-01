@@ -110,6 +110,7 @@ button, .btn,.f-btn{
 /* BOTTONS */
   /* PRIMARY */
   button,.btn{
+    display: block;
     color: $purple-2;
     background-color: $white;
     border: solid $purple-2 1px;

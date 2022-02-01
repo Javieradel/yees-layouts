@@ -99,6 +99,7 @@ button, .btn, .f-btn {
 /* BOTTONS */
 /* PRIMARY */
 button, .btn {
+  display: block;
   color: #652480;
   background-color: #FFF;
   border: solid #652480 1px;
@@ -421,6 +422,12 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
 .container-main .own-container .start-wellcome .contact .own-container ul li svg.ws {
   margin-top: -2px;
 }
+.container-main .own-container .testimonials.testimonials-bg-purple-6 {
+  background-color: #F8F6FB;
+}
+.container-main .own-container .testimonials.testimonials-bg-purple-6 .card[card] {
+  background-color: #F6E3FB !important;
+}
 .container-main .own-container .testimonials .own-container {
   position: relative;
 }
@@ -510,33 +517,33 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
     width: 100%;
   }
 }
-.container-main > main {
+.container-main .webinar {
   position: relative;
   width: 100%;
   max-width: 1116px;
 }
-.container-main > main figure {
+.container-main .webinar figure {
   z-index: 1;
   margin-top: 15%;
 }
-.container-main > main figure img {
+.container-main .webinar figure img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 @media (min-width: 576px) {
-  .container-main > main figure img {
+  .container-main .webinar figure img {
     width: 524px;
     height: 432px;
   }
 }
 @media (min-width: 768px) {
-  .container-main > main figure img {
+  .container-main .webinar figure img {
     width: 768px;
     height: 432px;
   }
 }
-.container-main > main > main {
+.container-main .webinar > main {
   z-index: 2;
   max-width: 100%;
   margin-top: -30px;
@@ -551,7 +558,7 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   padding: 20px 40px;
 }
 @media (min-width: 575px) {
-  .container-main > main > main {
+  .container-main .webinar > main {
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 0;
     height: 368px;
@@ -562,21 +569,21 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   }
 }
 @media (min-width: 768px) {
-  .container-main > main > main {
+  .container-main .webinar > main {
     min-width: 584px;
   }
 }
 @media (min-width: 800px) {
-  .container-main > main > main {
+  .container-main .webinar > main {
     height: 352px;
     top: calc(90% - 352px);
     width: 774px;
   }
 }
-.container-main > main > main .badges-list ul {
+.container-main .webinar > main .badges-list ul {
   list-style: none;
 }
-.container-main > main > main .badges-list ul .badges {
+.container-main .webinar > main .badges-list ul .badges {
   color: #FFF;
   background-color: #490C63;
   border-radius: 24px;
@@ -585,23 +592,126 @@ button.desactivated, button[disabled], button:disabled, .btn.desactivated, .btn[
   margin-bottom: 15px;
 }
 @media (max-width: 440px) {
-  .container-main > main > main .badges-list ul .badges {
+  .container-main .webinar > main .badges-list ul .badges {
     font-weight: 800;
   }
 }
-.container-main > main > main .badges-list ul .badges::before {
+.container-main .webinar > main .badges-list ul .badges::before {
   content: "⬤";
   font-size: 0.65em;
   position: relative;
   top: -2px;
 }
-.container-main > main > main .badges-list ul .badges:hover {
+.container-main .webinar > main .badges-list ul .badges:hover {
   color: #FFEC00;
 }
 @media (min-width: 575px) {
-  .container-main > main > main .actions {
+  .container-main .webinar > main .actions {
     max-width: 60%;
   }
+}
+.container-main .content {
+  padding: 75px 0;
+}
+.container-main .content .own-full-container header button {
+  width: 155px;
+}
+.container-main .content .own-full-container main .wrapp .cont {
+  max-width: 1344px;
+}
+.container-main .content .own-full-container main .wrapp .cont .card {
+  max-width: 343px;
+  position: relative;
+  border: none;
+}
+@media (min-width: 768px) {
+  .container-main .content .own-full-container main .wrapp .cont .card {
+    max-width: 432px;
+  }
+}
+.container-main .content .own-full-container main .wrapp .cont .card figure {
+  box-shadow: 1px 1px 25px 0px rgba(7, 7, 7, 0.3);
+}
+.container-main .content .own-full-container main .wrapp .cont .card figure img {
+  min-width: 100%;
+}
+.container-main .content .own-full-container main .wrapp .cont .card figure figcaption {
+  border-radius: 0;
+  height: 40px;
+  padding: 12px;
+  margin-top: -40px;
+}
+.container-main .content .own-full-container main .wrapp .cont .card figure figcaption nav {
+  width: calc(100% - 112px);
+}
+@media (min-width: 768px) {
+  .container-main .content .own-full-container main .wrapp .cont .card figure figcaption nav {
+    width: calc(100% - 200px);
+  }
+}
+.container-main .content .own-full-container main .wrapp .cont .card figure figcaption nav ul li {
+  display: block;
+  padding: 0 7px;
+}
+.container-main .content .own-full-container main .wrapp .cont .card figure figcaption nav ul li:first-child {
+  padding-right: 18px;
+  border-right: 1px solid #D4D4D4;
+}
+.container-main .content .own-full-container main .wrapp .cont .card .btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+@media (min-width: 578px) {
+  .container-main .content .own-full-container main .wrapp .cont .card:last-of-type {
+    display: none;
+  }
+}
+@media (min-width: 1300px) {
+  .container-main .content .own-full-container main .wrapp .cont .card:last-of-type {
+    display: block;
+  }
+}
+.container-main > footer .CTA-footer {
+  background-color: #490C63;
+}
+.container-main > footer .CTA-footer .own-container {
+  color: #FFF;
+  width: 100%;
+  max-width: 1116px;
+  margin: auto;
+}
+.container-main > footer .CTA-footer .own-container nav .btn svg {
+  fill: currentColor;
+  width: 12px;
+  margin-top: -1.5px;
+}
+.container-main > footer main .own-container {
+  border-bottom: 1px solid #848484;
+}
+@media (max-width: 768px) {
+  .container-main > footer main .own-container nav nav {
+    width: 50%;
+  }
+}
+@media (min-width: 578px) {
+  .container-main > footer main .own-container p {
+    max-width: 448px;
+  }
+}
+
+.blur {
+  /*BLUR*/
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /*# sourceMappingURL=layout.css.map */
